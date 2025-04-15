@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoe's Adventure</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #333;
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav .logo a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Mobile Menu */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .menu-icon span {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+        }
+
+        /* Main Sections */
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Gallery Section */
+        .gallery-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+        }
+
+        /* Form Styles */
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Zoe's Adventure</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section id="home" class="section-home">
+        <div class="container">
+            <h1>Zoe's Morning</h1>
+            <p>Zoe wakes up, feeling that today will be a special day. She gets dressed in her favorite yellow dress, has breakfast, and gets ready to go outside.</p>
+            <img src="image1.jpg" alt="Zoe's Morning Image">
+        </div>
+    </section>
+
+    <section id="about" class="section-about">
+        <div class="container">
+            <h2>Zoe in the Park</h2>
+            <p>Zoe walks into the park, admiring the beautiful flowers and listening to the birds singing. She feels happy and decides to play on the grass.</p>
+            <img src="image2.jpg" alt="Zoe in the Park Image">
+        </div>
+    </section>
+
+    <section id="services" class="section-services">
+        <div class="container">
+            <h2>Zoe Meets a Puppy</h2>
+            <p>As Zoe sits on the grass, a little puppy runs over, wagging its tail like a small flag. Zoe smiles and says, "Hi, little puppy, how are you?"</p>
+            <img src="image3.jpg" alt="Zoe Meets a Puppy Image">
+        </div>
+    </section>
+
+    <section id="gallery" class="section-gallery">
+        <div class="container">
+            <h2>Zoe Becomes Friends with the Puppy</h2>
+            <p>The puppy gently nudges Zoe’s hand with its nose. Zoe strokes its head and says, "You're so friendly. We can play together!"</p>
+            <img src="image4.jpg" alt="Zoe Becomes Friends Image">
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Zoe and the Puppy Run Together</h2>
+            <p>Zoe holds the puppy's leash, and they start running through the park. They run across the grass and over a small stream, laughing together.</p>
+            <img src="image5.jpg" alt="Zoe and the Puppy Run Together Image">
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Zoe Teaches the Puppy a New Game</h2>
+            <p>Zoe stops and decides to teach the puppy how to play fetch. She throws the ball far away, and the puppy quickly runs to fetch it, bringing it back to Zoe.</p>
+            <img src="image6.jpg" alt="Zoe Teaches the Puppy a New Game Image">
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Zoe Discovers a Beautiful Flower</h2>
+            <p>After the game, Zoe notices a beautiful flower growing in the grass. She carefully picks it and says to the puppy, "This flower is so pretty. Let's look at it together."</p>
+            <img src="image7.jpg" alt="Zoe Discovers a Beautiful Flower Image">
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Zoe Learns to Share</h2>
+            <p>Zoe looks at the flower and thinks, "I shouldn't just enjoy this flower by myself, I can share it with the puppy." She gently places the flower next to the puppy.</p>
+            <img src="image8.jpg" alt="Zoe Learns to Share Image">
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Zoe Says Goodbye to the Puppy</h2>
+            <p>As the sun begins to set, Zoe knows it’s time to go home. She gently pats the puppy’s head and says, "Goodbye, thank you for playing with me today!"</p>
+            <img src="image9.jpg" alt="Zoe Says Goodbye to the Puppy Image">
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Zoe’s Happy Walk Home</h2>
+            <p>Zoe happily walks home, thinking about all the things she learned today and how she made a new friend. She looks forward to seeing the puppy again tomorrow and playing more games together.</p>
+            <img src="image10.jpg" alt="Zoe's Happy Walk Home Image">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zoe's Adventure. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
